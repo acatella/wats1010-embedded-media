@@ -5,6 +5,194 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
- }
+/***************
+RESET
+***************/
+
+* {
+-mox-box-sizing: border-box;
+Box-sizing: border-box;
+Padding: 0;
+Margin: 0;
+line-height: 1.2em;
+} 
+
+/***************
+GENERAL
+***************/
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+.right {
+	float: right;
+}
+
+.wrapper {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 6px;
+}
+/***************
+TOP NAV
+***************/
+
+.header {
+	height: 30px;
+	padding: 6px 5px;
+	font-size: .8em;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	z-index: 10;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.nav-bar {
+	display: inline-block;
+}
+
+/***************
+SOCIAL
+***************/
+
+.right .nav-item {
+	margin: 0 0 0 3px;	
+}
+
+
+/***************
+START PAGE
+***************/
+
+.start-page {
+	height: 100vh;
+	background: rgba(209, 209, 209,.2);
+	padding-top: 30vh;
+	padding-left: 120vh;
+
+}
+
+.page-title {
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	z-index: -1;
+}
+
+.page-title h1 {
+	font-size: 2em;
+}
+
+.page-title h1:first-letter {
+	font-size: 1.4em;
+}
+
+/***************
+WATCH SECTION
+***************/
+
+.watch {
+	z-index: 2;
+	position: relative;
+	background: #fff;
+	height: 800px;
+	padding: 200px 0;
+}
+
+.placeholder-vid {
+	background: rgba(0, 0, 0,.2);
+	height: 434px;
+	width: 768px;
+	padding: 215px;
+	text-align: center;
+}
+
+.watch p, .watch h3{
+	display: inline;
+}
+
+/***************
+LISTEN SECTION
+***************/
+
+.listen {
+	background: #F7F7F7;
+	height: 300px;
+}
+
+.listen h3, .listen p {
+	display: inline;
+}
+
+/***************
+ABOUT SECTION
+***************/
+
+.about {
+	background: #E6E6E6;
+	height: 500px;
+	
+}
+
+.section-container {
+	text-align: center;
+}
+
+.weybec-people {
+	display: inline-block;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.img-box {
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background: rgba(0, 0, 0,.2);
+	margin: 0px 10px;
+	border-radius: 12px;
+}
+
+.mask {
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.mask:hover {
+	opacity: 1;
+}
+
+/***************
+FOOTER
+***************/
+
+.footer {
+	height: 30px;
+	padding: 6px 5px;
+	font-size: .8em;
+	width: 100%;
+	background: #fff;
+}
+
+.footer p {
+	display: inline;
+}
