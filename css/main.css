@@ -162,19 +162,22 @@ ABOUT SECTION
 	text-align: center;
 }
 
+.img-box img {
+	border-radius: 12px;
+}
+
 .img-box {
 	display: inline-block;
 	height: 150px;
 	width: 150px;
-	background: rgba(0, 0, 0,.2);
-	margin: 0px 10px;
-	border-radius: 12px;
+	margin: 0 10px;
 }
 
 .mask {
 	opacity: 0;
 	height: 100%;
 	width: 100%;
+	z-index: 2;
 }
 
 .mask:hover {
