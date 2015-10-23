@@ -34,9 +34,18 @@ li {
 	list-style: none;
 }
 
-h1 {
+h1,h2,h3 {
 	text-transform: uppercase;
 }
+
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .right {
 	float: right;
 }
@@ -52,20 +61,19 @@ TOP NAV
 
 .header {
 	height: 35px;
-	padding: 7px 5px;
+	padding: 7px 22px;
 	font-size: .8em;
 	border-bottom: 1px solid #ccc;
 	position: fixed;
 	width: 100%;
 	background: #fff;
-	z-index: 10;
+	z-index: 10000;
 }
 
 .nav-item {
 	display: inline-block;
 	margin-right: 3px;
 }
-
 
 .nav-bar {
 	display: inline-block;
@@ -127,23 +135,24 @@ WATCH SECTION
 
 .watch {
 	z-index: 2000;
- 	position: relative;
 	background: #fff;
-	height: 800px;
-	padding: 200px 0;
+	height: 100vh;
+	padding: 100px 0;
 	width: 100%;
 }
 
-.placeholder-vid {
-	background: rgba(0, 0, 0,.2);
+.main-vid-box {
 	height: 434px;
 	width: 768px;
-	padding: 215px;
-	text-align: center;
+	margin-bottom: 20px;
 }
 
-.watch p, .watch h3{
+.dl-options {
 	display: inline;
+}
+
+.dl-options .download-button {
+	margin-right: 10px;
 }
 
 /***************
@@ -152,12 +161,14 @@ LISTEN SECTION
 
 .listen {
 	background: #F7F7F7;
-	height: 300px;
+	height: 45vh;
+	padding-top: 10vh;
 }
 
-.listen h3, .listen p {
-	display: inline;
+.audio-track {
+	margin: 20px 0 10px;
 }
+
 
 /***************
 ABOUT SECTION
@@ -165,10 +176,16 @@ ABOUT SECTION
 
 .about {
 	background: #E6E6E6;
-	height: 500px;
+	height: 75vh;
+	padding-top: 10vh;
 	
 }
 
+.lead {
+	margin: 20px 0 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
 .section-container {
 	text-align: center;
 }
@@ -188,13 +205,24 @@ ABOUT SECTION
 	height: 150px;
 	width: 150px;
 	margin: 0 10px;
+	position: relative;
 }
 
 .mask {
 	opacity: 0;
-	height: 100%;
-	width: 100%;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
 	z-index: 2;
+	color: #fff;
+	background: rgba(0,0,0,.3);
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 65px;
+	border-radius: 10px;
 }
 
 .mask:hover {
@@ -215,4 +243,5 @@ FOOTER
 
 .footer p {
 	display: inline;
+	font-size: .8em;
 }
