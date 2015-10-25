@@ -107,6 +107,7 @@ START PAGE
 	position: fixed;
 	z-index: -1;
 	color: #fff;
+	text-shadow: 2px 1px 0 #000;
 }
 
 .page-title h1 {
@@ -163,19 +164,19 @@ LISTEN SECTION
 	background: #F7F7F7;
 	height: 45vh;
 	padding-top: 10vh;
+	
 }
 
 .audio-track {
 	margin: 20px 0 10px;
 }
 
-
 /***************
 ABOUT SECTION
 ***************/
 
 .about {
-	background: #E6E6E6;
+	background: #fff;
 	height: 75vh;
 	padding-top: 10vh;
 	
@@ -185,6 +186,8 @@ ABOUT SECTION
 	margin: 20px 0 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #ccc;
+	text-shadow: 2px 1px #ccc;
+	text-transform: uppercase;
 }
 .section-container {
 	text-align: center;

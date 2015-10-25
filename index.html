@@ -8,14 +8,11 @@
         <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/icon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="img/icon/favicon.ico" />
 		<link rel="shortcut icon" href="img/icon/favicon.ico" />
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
     </head>
-
-<!-- 	add codec information for two vids below -->
-<!-- 	add letter press styling to or cutout effect to text in .lead about section -->
-<!-- 	add a homescreen icon for iphone and android that matches the favicon -->
     <body>
 		<header class="header">
 		<nav class="top-nav">
@@ -47,8 +44,8 @@
 			<div class="wrapper">
 			<div class="main-vid-box">
 				<video controls class="main-vid" height="434px" width="768px">
-					<source src="media/video/monkaa_1080p.webm" type="video/webm">
-					<source src="media/video/monkaa_1080p.mp4" type="video/mp4">
+					<source src="media/video/monkaa_1080p.webm" type="video/webm; codec=vp8,vorbis">
+					<source src="media/video/monkaa_1080p.mp4" type="video/mp4; codec=avc1.42E01E,mp4a.40.2">
 				</video>
 			</div>			
             <p class="dl-options">
@@ -63,7 +60,6 @@
             </p>
 			</div>
         </section>
-
         <section class="listen" id="listen">
 			<div class="wrapper">
             <h3>Listen to the Soundtrack:</h3>	
@@ -82,7 +78,6 @@
 
         <section class="about" id="about">
 			<div class="wrapper">
-            <h3>About</h3>
 			<p class="lead">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
 			
             <p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
@@ -115,8 +110,8 @@
 		</div>
         </section>
 
-        <footer class="footer"><!-- TODO: Style the footer appropriately. -->
-            <p>This page was created and designed by WEBDEV BEV in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
+        <footer class="footer">
+            <p>This page was created and designed by Afi C. Clark in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
         </footer>
 
     </body>
